@@ -10,3 +10,204 @@
   <p>Este é meu primeiro site publicado no GitHub Pages 🚀</p>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[NOME DO PRODUTO] — Página de Vendas</title>
+  <style>
+    :root {
+      --primary: #0070f3;
+      --primary-dark: #005ac1;
+      --bg: #f9fafc;
+      --text: #222;
+      --muted: #666;
+    }
+    body {
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      margin: 0;
+      background: var(--bg);
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header.hero {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 0;
+    }
+    header.hero h1 {
+      font-size: 2.4rem;
+      margin-bottom: 15px;
+      color: #111;
+    }
+    header.hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: var(--muted);
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .btn:hover {
+      background: var(--primary-dark);
+      transform: scale(1.03);
+    }
+    section {
+      margin: 60px 0;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #111;
+    }
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #eee;
+      padding: 25px;
+      border-radius: 12px;
+      flex: 1 1 300px;
+      max-width: 350px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+    blockquote {
+      border-left: 5px solid var(--primary);
+      padding-left: 15px;
+      margin: 20px auto;
+      max-width: 700px;
+      font-style: italic;
+      color: var(--muted);
+      background: #fff;
+      border-radius: 8px;
+      padding: 15px;
+    }
+    #comprar {
+      text-align: center;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    #comprar p {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      background: #f0f2f5;
+      border-top: 1px solid #ddd;
+    }
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- HERO -->
+    <header class="hero">
+      <div>
+        <h1>[Título Principal — promessa clara]</h1>
+        <p><strong>[Subtítulo com benefício direto e prova social]</strong></p>
+        <a class="btn" href="#comprar">Quero Acessar Agora</a>
+      </div>
+      <div>
+        <img src="[URL_DA_IMAGEM]" alt="Imagem do Produto">
+      </div>
+    </header>
+
+    <!-- PROBLEMA -->
+    <section>
+      <h2>O Problema</h2>
+      <p style="text-align:center; max-width:800px; margin:0 auto;">
+        [Descreva aqui a dor do cliente de forma clara e empática. Mostre que você entende o que ele passa e que existe uma solução prática.]
+      </p>
+    </section>
+
+    <!-- SOLUÇÃO / BENEFÍCIOS -->
+    <section>
+      <h2>O que você vai receber</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Módulo 1</h3>
+          <p>[Explicação breve e clara do conteúdo do módulo]</p>
+        </div>
+        <div class="card">
+          <h3>Módulo 2</h3>
+          <p>[Descrição do aprendizado principal do módulo]</p>
+        </div>
+        <div class="card">
+          <h3>Bônus Exclusivo</h3>
+          <p>[Checklist, templates, mentorias ou extras que aumentam o valor]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section>
+      <h2>Depoimentos de quem já comprou</h2>
+      <blockquote>"Esse produto mudou meu negócio em menos de 15 dias!" — <em>Maria S.</em></blockquote>
+      <blockquote>"Finalmente consegui criar minha primeira página de vendas e fazer minhas primeiras vendas." — <em>João P.</em></blockquote>
+    </section>
+
+    <!-- OFERTA -->
+    <section id="comprar">
+      <h2>Oferta Especial</h2>
+      <p>De <s>R$ [preço original]</s> por apenas <strong>R$ [valor promocional]</strong> ou <strong>3x de R$ [parcelado]</strong></p>
+      <a class="btn" href="[LINK_CHECKOUT]">Comprar Agora</a>
+      <p style="margin-top:15px; font-size:0.9rem; color:var(--muted);">Pagamento 100% seguro • Garantia de 7 dias</p>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+      <p>© [Ano] [Nome da Empresa] • <a href="#">Política de Privacidade</a> • <a href="#">Termos de Uso</a></p>
+    </footer>
+  </div>
+</body>
+</html>
+
